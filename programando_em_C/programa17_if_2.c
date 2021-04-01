@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>  // biblioteca utilizada para testar grupo de caracteres.
 
 int main() {
     int i = 10;
