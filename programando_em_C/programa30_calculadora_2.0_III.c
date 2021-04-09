@@ -1,14 +1,12 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <ncurses.h>
-
 
 int main() {
     float num1, num2, resultado;
     char op = '0';
 
     do{
-        num1, num2, resultado = 0; 
+        num1 = num2 = resultado = 0; 
         
         //imprimindo as opções da calculadora 
         printf(" (1) somar \n");
@@ -17,11 +15,11 @@ int main() {
         printf(" (4) dividir\n");
         printf(" (0) sair do programa\n");
 
-        printf("Informe a operação: \n");
+        printf("\nInforme a operação:\n");
         printf("\t\t\t>>>");
-        op = getchar();
-        printf("\n\n");
 
+        op = getche();
+        printf("\n");
 
         if(op != '0'){
             printf("Digite o primeiro número:\n");
