@@ -1,5 +1,6 @@
 #include <stdlib.h>
-#include <ncurses.h>
+#include <stdio.h>
+#include <math.h>
 
 int main() {
     float num1, num2, resultado;
@@ -18,7 +19,7 @@ int main() {
         printf("\nInforme a operação:\n");
         printf("\t\t\t>>>");
 
-        op = getche();
+        op = getchar();
         printf("\n");
 
         if(op != '0'){
@@ -51,8 +52,6 @@ int main() {
         // system("pause"); //aqui para o programa;
 
         printf("\nPressione enter para realizar uma nova operação: ");
-
-        getch();
         system("cls"); // aqui limpa a tela.
     }
 

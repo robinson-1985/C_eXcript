@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ncurses.h>
 
 
 int main() {
     float num1, num2, resultado;
-    char op = '0';
+    char operacao = '0';
 
     do{
         num1, num2, resultado = 0; 
@@ -19,46 +18,46 @@ int main() {
 
         printf("Informe a operação: \n");
         printf("\t\t\t>>>");
-        op = getchar();
+        operacao = getchar();
         printf("\n\n");
 
 
-        if(op != '0'){
+        if(operacao != '0'){
             printf("Digite o primeiro número:\n");
             scanf("%f", &num1);
             printf("Digite o segundo número:\n");
             scanf("%f", &num2);
 
-            if(op == '1'){
+            if(operacao == '1'){
                 resultado = num1 + num2;
             }
                 else{
-                    if(op == '2'){
+                    if(operacao == '2'){
                         resultado = num1 - num2;
                     }
                     else{
-                        if(op == '3'){
+                        if(operacao == '3'){
                             resultado = num1 * num2;
                         }
                         else{
-                            if(op == '4'){
+                            if(operacao == '4'){
                                 resultado = num1 / num2;
                             }
                         }
                     }
                 }
-            }
+        }
         printf("\nO resultado é: %f\n", resultado);
 
         // system("pause"); //aqui para o programa;
 
         printf("\nPressione enter para realizar uma nova operação: ");
 
-        getch();
         system("cls"); // aqui limpa a tela.
+        
     }
 
-    while( op != '0');
+    while( operacao != '0');
 
     return 0;
 }
